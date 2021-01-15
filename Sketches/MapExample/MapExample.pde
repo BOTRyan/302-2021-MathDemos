@@ -5,14 +5,11 @@ void setup() {
 void draw() {
   background(128);
 
-  float p = millis() / 2000f;
-  float size = lerpy(50, 300, p);
-
-  fill(p * 255);
+  float size = mappy(mouseX, 0, width, 50, 300);
   ellipse(width/2, height/2, size, size);
 }
 
-// Lerp functions (with overloading)
+// Lerp Functions (with overloading)
 float lerpy(float min, float max, float p) {
   return lerpy(min, max, p, true);
 }
@@ -28,4 +25,13 @@ float lerpy(float min, float max, float p, boolean allowExtrapolation) {
 
   return min + offset;
   // return min + (max - min) * p;
+}
+
+// Map Functions
+float mappy(float inVal, float inMin, float inMax, float outMin, float outMax) {
+  // find p
+  float p = (inVal - inMin) / (inMax - inMin);
+
+  // lerp with p
+  return lerpy(outMin, outMax, p);
 }
