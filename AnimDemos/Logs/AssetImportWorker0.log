@@ -963,3 +963,12 @@ System memory in use after: 57.7 MB.
 Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1609.
 Total: 1.692000 ms (FindLiveObjects: 0.151900 ms CreateObjectMapping: 0.047600 ms MarkObjects: 1.476700 ms  DeleteObjects: 0.014600 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 1630.368541 seconds.
+  path: Assets/Scripts/SlideTowards.cs
+  artifactKey: Guid(3f7f2550fa49fb6489d1aeeb7ee16041) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SlideTowards.cs using Guid(3f7f2550fa49fb6489d1aeeb7ee16041) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99836b0b5dae10aef151e6868e547e84') in 0.007998 seconds
+  Import took 0.010398 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

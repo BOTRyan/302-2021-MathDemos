@@ -8,11 +8,6 @@ public class RevolveAround : MonoBehaviour
 
     public float radius = 2;
     private float age = 0;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
