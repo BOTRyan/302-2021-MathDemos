@@ -54,9 +54,9 @@ public class BezierQuadratic : MonoBehaviour
         Vector3 positionD = AnimMath.Lerp(handle.position, positionB.position, percent);
 
         // pF = lerp between pC and pD
-        Vector3 positionF = AnimMath.Lerp(positionC, positionD, percent);
+        Vector3 positionE = AnimMath.Lerp(positionC, positionD, percent);
 
-        return positionF;
+        return positionE;
     }
 
     private void OnDrawGizmos()
